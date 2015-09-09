@@ -43,7 +43,7 @@ mariadb:latest
 
 , then do the following to start container with linked mysql-server:
 
-```
+```bash
 sudo docker run -d -p 8080:8080 --name agilefant-app --link agilefant-db:db kcyeu/agilefant
 ```
 
