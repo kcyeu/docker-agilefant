@@ -7,11 +7,9 @@ Dockerized Agilefant.
 
 ### Use Docker Compose (TL;DR)
 
-Install Docker Compose [first](https://docs.docker.com/compose/install/), then
-use the prepared docker-compose file to launch containers. You may change the 
-credentials in the YAML file.
+Install Docker Compose [first](https://docs.docker.com/compose/install/), then use the prepared docker-compose file to launch containers. You may change the credentials in the YAML file.
 
-```
+```bash
 wget https://raw.githubusercontent.com/kcyeu/docker-compose/master/agilefant/docker-compose.yml
 docker-composer up -d
 ```
@@ -21,6 +19,7 @@ docker-composer up -d
 To run the container, (optionally) start MySQL or other compatible RDBMS:
 
 MySQL:
+
 ```bash
 sudo docker run -d --name agilefant-db \
 -e MYSQL_ROOT_PASSWORD=root-secret \
@@ -32,7 +31,7 @@ mysql:latest
 
 , or MariaDB:
 
-```
+```bash
 sudo docker run -d --name agilefant-db \
 -e MYSQL_ROOT_PASSWORD=root-secret \
 -e MYSQL_DATABASE=agilefant \
