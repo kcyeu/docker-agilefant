@@ -1,7 +1,7 @@
 # docker-agilefant
-![redis](https://i.imgur.com/2o0KogZ.png =520x)
+![agilefant](http://i.imgur.com/ZLdI02W.png =240x)
 
-Dockerized Agilefant Workbench.
+Dockerized Agilefant.
 
 ## Usage
 
