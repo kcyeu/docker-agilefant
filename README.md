@@ -9,7 +9,7 @@ Dockerized Agilefant.
 To run the container, (optionally) start MySQL or other compatible RDBMS:
 
 MySQL:
-```
+```bash
 sudo docker run -d --name agilefant-db \
 -e MYSQL_ROOT_PASSWORD=root-secret \
 -e MYSQL_DATABASE=agilefant \
@@ -18,7 +18,7 @@ sudo docker run -d --name agilefant-db \
 mysql:latest
 ```
 
-MariaDB:
+, or MariaDB:
 ```
 sudo docker run -d --name agilefant-db \
 -e MYSQL_ROOT_PASSWORD=root-secret \
