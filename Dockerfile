@@ -15,9 +15,9 @@ ENV DESTINATION /usr/local/tomcat/webapps/agilefant
 RUN mkdir -p /tmp /opt
 ADD http://sourceforge.net/projects/agilefant/files/latest/download /tmp/agilefant.zip
 ADD assets/entrypoint.sh /opt/entrypoint.sh
+ADD assets/setenv.sh /usr/local/tomcat/bin/setenv.sh
 
-RUN chmod +x /opt/entrypoint.sh \
-&& cd /tmp \
+RUN cd /tmp \
 && unzip -d "$AF_UNZIP" agilefant.zip \
 && cd "$AF_UNZIP" \
 && unzip -d "$AF_UNWAR" agilefant.war \
