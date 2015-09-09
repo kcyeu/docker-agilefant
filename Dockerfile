@@ -27,8 +27,5 @@ RUN chmod +x /opt/entrypoint.sh \
 
 EXPOSE 8080
 
-#CMD /opt/entrypoint.sh && echo "Wait 10 sec for database to be ready" && sleep 10 && catalina.sh run
-#CMD /opt/entrypoint.sh && catalina.sh run
-
 ENTRYPOINT /opt/entrypoint.sh
 
