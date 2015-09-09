@@ -1,5 +1,5 @@
 # docker-agilefant
-![agilefant](http://i.imgur.com/ZLdI02W.png =240x)
+![agilefant](http://i.imgur.com/ZLdI02W.png)
 
 Dockerized Agilefant.
 
