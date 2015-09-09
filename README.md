@@ -37,7 +37,10 @@ sudo docker run -d -p 8080:8080 --name agilefant-app --link agilefant-db:db kcye
 ### Use Docker Compose
 
 Install Docker Compose [first](https://docs.docker.com/compose/install/), then
+use the prepared docker-compose file to launch containers. You may change the 
+credentials in the YAML file.
 
 ```
+wget https://raw.githubusercontent.com/kcyeu/docker-compose/master/agilefant/docker-compose.yml
 docker-composer up -d
 ```
