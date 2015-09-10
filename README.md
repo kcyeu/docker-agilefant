@@ -45,3 +45,13 @@ sudo docker run -d -p 8080:8080 --name agilefant-app \
 --link agilefant-db:db kcyeu/agilefant
 ```
 
+## System Requirements
+
+### CPU
+  * 1 core works but the application can be a bit slower due to having MySQL and Java app running on the same core
+  * 2 cores is the recommended number of cores
+
+### Memory
+  * 1.5 GB RAM is the recommended memory size, since MySQL takes 1 GB to run smoothly and Tomcat with app needs 512 MB
+
+
