@@ -1,0 +1,12 @@
+sudo: required
+
+#language: 
+
+services:
+  - docker
+
+before_install:
+- docker build -t kcyeu/agilefant .
+
+script:
+- curl -H "Content-Type: application/json" --data '&#123;"source_type": "Branch", "source_name": "staging"&#125;' -X POST https://registry.hub.docker.com/u/kcyeu/agilefant/trigger/de045fe0-bf29-4316-afff-889dafc4ba18/
