@@ -1,5 +1,5 @@
 # docker-agilefant
-![Agilefant 3.5.4](https://img.shields.io/badge/agilefant-3.5.4-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Build Status](https://travis-ci.org/kcyeu/docker-agilefant.svg?branch=master)](https://travis-ci.org/kcyeu/docker-agilefant) ![Agilefant 3.5.4](https://img.shields.io/badge/agilefant-3.5.4-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ![agilefant](http://i.imgur.com/ZLdI02W.png)
 
