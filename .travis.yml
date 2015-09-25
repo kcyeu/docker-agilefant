@@ -4,6 +4,9 @@ branches:
 
 sudo: required
 
+git:
+    depth: 1
+
 language: bash
 
 services:
