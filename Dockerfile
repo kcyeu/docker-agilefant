@@ -3,8 +3,7 @@ MAINTAINER Kuo-Cheng Yeu <kmd@mikuru.tw>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get -qq update && apt-get -qqy install \ 
-    vim-tiny ttf-dejavu \
+RUN apt-get -qq update && apt-get -qqy install ttf-dejavu \
 && rm -rf /var/lib/apt/lists/*
 
 ENV AF_UNZIP    /tmp/agilefant
