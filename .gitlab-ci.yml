@@ -1,0 +1,18 @@
+before_script:
+  - docker info
+
+jobs:
+  script:
+    - "docker build -t kcyeu/agilefant ."
+    - "docker build -t kcyeu/agilefanttt ."
+    - "curl -H 'Content-Type: application/json' --data '{\"source_type\": \"Branch\", \"source_name\": \"master\"}' -X POST https://registry.hub.docker.com/u/kcyeu/agilefant/trigger/de045fe0-bf29-4316-afff-889dafc4ba18/"
+  only:
+    - dev
+
+production:
+  script:
+    - cap deploy production
+  type: deploy
+  only:
+    - master
+    - /^deploy-.*$/
