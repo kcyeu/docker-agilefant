@@ -13,7 +13,7 @@ Install Docker Compose [first](https://docs.docker.com/compose/install/), then u
 
 ```bash
 wget https://raw.githubusercontent.com/kcyeu/docker-compose/master/agilefant/docker-compose.yml
-docker-composer up -d
+docker-compose up -d
 ```
 
 
